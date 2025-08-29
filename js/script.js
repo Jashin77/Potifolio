@@ -10,3 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+
+function abrirImagem(src) {
+  document.getElementById("overlay").style.display = "flex";
+  document.getElementById("imgGrande").src = src;
+}
+
+function fecharImagem() {
+  document.getElementById("overlay").style.display = "none";
+}

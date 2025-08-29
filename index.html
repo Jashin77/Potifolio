@@ -31,7 +31,7 @@
         </div>
         <div class="sobre-conteudo">
           <h2>Sobre mim</h2>
-          <p>Sou desenvolvedor focado em back-end, com experiência em ASP.NET, C# e banco de dados SQL Server.
+          <p>Sou desenvolvedor focado em back-end, com experiência em ASP.NET, C#, banco de dados e Entity Framework Core.
             Tenho interesse especial na construção de APIs, lógica de negócio e estruturação de aplicações escaláveis e seguras.
             Também possuo conhecimento em HTML, CSS e JavaScript, o que me permite integrar bem com o front-end quando necessário.
             Estou em constante aprendizado e sempre buscando melhorar minhas habilidades técnicas e colaborar em projetos que entreguem soluções de qualidade.
@@ -59,21 +59,27 @@
           <div class="projeto">
             <h3>Quiz de Carros</h3>
             <p>Um quiz interativo sobre carros feito em ASP.NET.</p>
+            <img class="projeto-imagem" src="img/QuizCarros.png" alt="Quiz de Carros" onclick="abrirImagem(this.src)">
             <a href="https://github.com/Jashin77/QuizCarros" target="_blank">Ver no GitHub</a>
           </div>
           <div class="projeto">
-            <h3>Site de Academia</h3>
-            <p>Um site responsivo para uma academia, feito com HTML, CSS e JavaScript.</p>
-            <a href="https://github.com/Jashin77/Projetos-web/tree/main/siteAcademia" target="_blank">Ver no GitHub</a>
+            <h3>Api de Catalogo</h3>
+            <img class="projeto-imagem" src="img/ApiCatalogo.png" alt="Api de Catalogo" onclick="abrirImagem(this.src)">
+            <p>Uma Api rest para gerenciar catalogos e produtos usando .net core.</p>
+            <a href="https://github.com/Jashin77/ApiCatalogo" target="_blank">Ver no GitHub</a>
           </div>
         </div>
       </div>
     </section>
+    <div class="overlay" id="overlay">
+    <span class="close" onclick="fecharImagem()">&times;</span>
+    <img id="imgGrande" src="">
+  </div>
   </main>
 
   <footer id="contato">
     <div>
-      <p>&copy; 2023 Braian Santos. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Braian Santos. Todos os direitos reservados.</p>
       <h2>Contato</h2>
       <p>Me envie um e-mail para <a href="mailto:braian.silva1313@gmail.com">braian.silva1313@gmail.com</a></p>
     </div>
