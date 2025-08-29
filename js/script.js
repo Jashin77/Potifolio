@@ -11,7 +11,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
+
 function abrirImagem(src) {
+  // Desabilita no mobile
+  if (window.innerWidth <= 600) {
+    return;
+  }
   document.getElementById("overlay").style.display = "flex";
   document.getElementById("imgGrande").src = src;
 }

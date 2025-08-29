@@ -1,8 +1,238 @@
+@media (max-width: 600px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  .overlay .projeto-imagem {
+    max-width: 90vw !important;
+    max-height: 40vh !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px #0003;
+    object-fit: contain;
+  }
+  .close {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .overlay .projeto-imagem {
+    max-width: 80vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 10px #0003;
+  }
+  .close {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .overlay {
+    align-items: flex-start;
+    padding-top: 20px;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .overlay .projeto-imagem {
+    max-width: 100vw;
+    width: 98vw;
+    max-height: 70vh;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .close {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .overlay .projeto-imagem {
+    max-width: 95vw;
+    max-height: 60vh;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .overlay {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  .close {
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #f4f4f4 0%, #e0e7ef 100%);
+  color: #232a31;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #232a31 60%, #0066cc 100%);
+  color: #fff;
+  padding: 80px 0 40px 0;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px #0001;
+}
+.hero h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: #e0e7ef;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 1.7em;
+  transition: color 0.2s;
+}
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Tipografia aprimorada */
+h1, h2, h3 {
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+h2 {
+  font-size: 2em;
+  color: #232a31;
+}
+h3 {
+  font-size: 1.2em;
+  color: #0066cc;
+}
+
+/* Botões modernos */
+a.botao, .projeto a {
+  display: inline-block;
+  background: linear-gradient(90deg, #0066cc 60%, #232a31 100%);
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, transform 0.2s;
+}
+a.botao:hover, .projeto a:hover {
+  background: linear-gradient(90deg, #232a31 60%, #0066cc 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Cards de projetos modernos */
+.projetos-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.projeto {
+  background: #fff;
+  padding: 24px 18px 18px 18px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #0001;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.projeto:hover {
+  box-shadow: 0 6px 32px #0002;
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Footer moderno */
+footer {
+  background: #232a31;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  border-radius: 24px 24px 0 0;
+  margin-top: 40px;
+  font-size: 1.1em;
+  box-shadow: 0 -2px 12px #0001;
+}
+
+/* Animações suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 600px) {
+  .hero {
+    padding: 48px 0 24px 0;
+    border-radius: 0 0 18px 18px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .projetos-grid {
+    gap: 16px;
+  }
+  .projeto {
+    padding: 14px 8px 12px 8px;
+    border-radius: 10px;
+  }
+  footer {
+    font-size: 1em;
+    padding: 14px 0 8px 0;
+    border-radius: 12px 12px 0 0;
+  }
 }
 html{
     height: 100%;
@@ -96,11 +326,12 @@ h2 {
   display: none; /* começa escondido */
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100vw; height: 100vh;
   background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
+  padding: 0;
 }
 .overlay .projeto-imagem {
   max-width: 80%;
@@ -123,9 +354,14 @@ h2 {
 
 .projeto {
   background: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 24px 18px 18px 18px;
+  border: none;
   border-radius: 8px;
+  box-shadow: 0 2px 16px #0001;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .projeto h3 {
@@ -135,6 +371,8 @@ h2 {
 .projeto a {
   text-decoration: none;
   color: #0066cc;
+  margin-top: 8px;
+  align-self: flex-start;
 }
 
 footer {
@@ -178,4 +416,65 @@ footer {
 .icones-tech img {
   width: 40px;
   height: 40px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0 0 0;
+    position: static;
+  }
+  .container {
+    width: 98%;
+    padding: 0 1%;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1rem;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  main {
+    padding-top: 20px;
+  }
+  .section {
+    padding: 30px 0 20px 0;
+    margin-bottom: 10px;
+  }
+  .projetos-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .projeto {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+  .sobre-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .foto-perfil img {
+    width: 120px;
+    height: 120px;
+  }
+  .icones-tech img {
+    width: 28px;
+    height: 28px;
+  }
+  footer {
+    font-size: 0.95em;
+    padding: 10px 0;
+  }
 }
