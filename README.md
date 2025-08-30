@@ -1,6 +1,6 @@
 # Portfólio — Braian (Jashin)
 
-Olá! 👋 Eu sou o **Braian Dos Santos da Silva**, também conhecido como **Jashin**. Tenho 18 anos, sou de Novo Hamburgo-RS e estou iniciando minha jornada como desenvolvedor com foco em aprender e evoluir!
+Olá! 👋 Eu sou o **Braian Dos Santos da Silva**. Tenho 20 anos, sou de Novo Hamburgo-RS e estou iniciando minha jornada como desenvolvedor com foco em aprender e evoluir!
 
 ---
 
