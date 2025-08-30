@@ -1,3 +1,23 @@
+#top-btns-container.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+/* Container dos botões de idioma e modo escuro fixo até o header */
+#top-btns-container {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 3600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: position 0.2s, top 0.2s;
+}
+#top-btns-container.stopped {
+  position: absolute !important;
+  top: auto !important;
+}
 /* Seletor de idioma */
 #lang-switch {
   background: #fff;
@@ -116,7 +136,7 @@ body.darkmode #projetos.section {
 /* Botão de modo escuro */
 #btn-darkmode {
   position: fixed;
-  top: 18px;
+  top: 160px;
   left: 18px;
   z-index: 3500;
   background: #fff;
@@ -607,7 +627,7 @@ h2 {
   background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 4000;
   padding: 0;
 }
 .overlay .projeto-imagem {
@@ -624,6 +644,7 @@ h2 {
   color: white;
   cursor: pointer;
   font-weight: bold;
+  z-index: 4100;
 }
 .close:hover {
   color: red;

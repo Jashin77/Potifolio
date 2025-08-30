@@ -1,3 +1,28 @@
+// Botões de idioma/tema: fixos no topo, mas descem para baixo do header se header estiver no topo
+const topBtns = document.getElementById('top-btns-container');
+const header = document.querySelector('header');
+function updateTopBtnsPosition() {
+  if (!topBtns || !header) return;
+  const headerRect = header.getBoundingClientRect();
+  const headerHeight = header.offsetHeight;
+  const spacing = 60; // Espaço do topo
+  // Se o topo do header está colado no topo da viewport
+  if (headerRect.top <= 0) {
+    topBtns.style.position = 'fixed';
+    topBtns.style.top = (headerHeight + spacing) + 'px';
+    topBtns.style.right = '18px';
+    topBtns.style.zIndex = 3600;
+  } else {
+    // Header não está no topo, botões ficam mais para baixo
+    topBtns.style.position = 'fixed';
+    topBtns.style.top = spacing + 'px';
+    topBtns.style.right = '18px';
+    topBtns.style.zIndex = 3600;
+  }
+}
+window.addEventListener('scroll', updateTopBtnsPosition);
+window.addEventListener('resize', updateTopBtnsPosition);
+document.addEventListener('DOMContentLoaded', updateTopBtnsPosition);
 // Tradução dinâmica PT/EN
 const translations = {
   pt: {
